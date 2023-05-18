@@ -8,10 +8,6 @@ namespace FileReaderProgram
         public static List<MonthlyReport> allMonthsReports = new List<MonthlyReport>();
         public static List<YearlyReport> allYearsReports = new List<YearlyReport>();
 
-        //переделать логику метода:
-        //в интерфейсе приложения должна быть кнопка для ввода файла
-        //пользователь в программе вводит год и месяц отчета,
-        //а затем выбирает файл из системы
         public static String ReadFile(String path)
         {
             String file = File.ReadAllText(path);
